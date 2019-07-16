@@ -3,7 +3,7 @@ package pointer.allpairs;
 public class Main {
 
     public static void main(String[] args) {
-        int[][] arr = getAllPairs( new int[] {4, 3, 6, 7, 100, 2, -90, 2, 5}, 10);
+        int[][] arr = getAllPairs(new int[] {4, 3, 6, 7, 100, 2, -90, 2, 5}, 10);
         printArray(arr);
     }
 
@@ -22,7 +22,10 @@ public class Main {
 
 
     public static int[][] getAllPairs(int[] array, int sum) {
-        int[][] result = new int[array.length * (array.length - 1)][];
+        int length = array.length - 1 ;
+        for (int i = length; i > 0; length += --i) {}
+        
+        int[][] result = new int[length][];
 
         int index = 0;
 
