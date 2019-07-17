@@ -8,9 +8,6 @@ public class Main {
     public static void main(String[] args) {
         int[] inputArray = new int[] {4, 3, 6, 7, 100, 2, -90, 2, 5};
         System.out.printf("Input array: %s\n", Arrays.toString(inputArray));
-        int[][] arr = getAllPairs(new int[] {4, 3, 6, 7, 100, 2, -90, 2, 5}, 10);
-        printArray(arr);
-    }
 
         SumComparator comparator = new SumComparator(10);
         sort(inputArray, comparator, 0, inputArray.length - 1);
@@ -37,16 +34,9 @@ public class Main {
 
             } while (i <= j);
 
-    public static int[][] getAllPairs(int[] array, int sum) {
-        int length = array.length - 1 ;
-        for (int i = length; i > 0; length += --i) {}
-        
-        int[][] result = new int[length][];
-
-        int index = 0;
-
             sort(array, comparator, a, j);
             sort(array, comparator, i, b);
+
         }
     }
 
