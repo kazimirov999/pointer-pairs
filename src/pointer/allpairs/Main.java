@@ -31,7 +31,6 @@ public class Main {
                     i++;
                     j--;
                 }
-
             } while (i <= j);
 
             sort(array, comparator, a, j);
