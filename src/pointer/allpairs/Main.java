@@ -6,8 +6,14 @@ import java.util.Comparator;
 public class Main {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         int[] inputArray = new int[] {4, 3, 6, 7, 100, 2, -90, 2, 5};
         System.out.printf("Input array: %s\n", Arrays.toString(inputArray));
+=======
+        int[][] arr = getAllPairs(new int[] {4, 3, 6, 7, 100, 2, -90, 2, 5}, 10);
+        printArray(arr);
+    }
+>>>>>>> 8f35bdca092652158c704d0aa30339eb348c5652
 
         SumComparator comparator = new SumComparator(10);
         sort(inputArray, comparator, 0, inputArray.length - 1);
@@ -32,7 +38,17 @@ public class Main {
                     j--;
                 }
 
+<<<<<<< HEAD
             } while (i <= j);
+=======
+    public static int[][] getAllPairs(int[] array, int sum) {
+        int length = array.length - 1 ;
+        for (int i = length; i > 0; length += --i) {}
+        
+        int[][] result = new int[length][];
+
+        int index = 0;
+>>>>>>> 8f35bdca092652158c704d0aa30339eb348c5652
 
             sort(array, comparator, a, j);
             sort(array, comparator, i, b);
